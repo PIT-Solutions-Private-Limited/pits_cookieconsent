@@ -1,0 +1,10 @@
+{
+  "name": "pits/pits_cookieconsent",
+  "description" : "A brand new TYPO3 extension which respects 2018 EU law based GDPR regulations. Rigged with Cookie Consent Insight's javascript API.",
+  "license": "GPL-2.0+",
+  "autoload": {
+        "psr-4": {
+            "PITS\\PitsCookieconsent\\": "Classes"
+        }
+    }
+}
