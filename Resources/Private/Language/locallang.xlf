@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-05-07T11:46:06Z" product-name="pits_cookieconsent">
+		<header/>
+		<body>
+			<trans-unit id="tx_pits_cookieconsent_domain_model_pitscookieconsent">
+				<source>PITS Cookie Control</source>
+			</trans-unit>
+			<trans-unit id="tx_pits_cookieconsent_domain_model_pitscookieconsent.description">
+				<source>The most popular solution to the EU cookie law.
+Rigged with TYPO3 codebase</source>
+			</trans-unit>
+			<trans-unit id="tx_pitscookieconsent_domain_model_cookiecontrol">
+				<source>Cookie Control</source>
+			</trans-unit>
+			<trans-unit id="def_message">
+				<source>This website uses cookies to ensure you get the best experience on our website.</source>
+			</trans-unit>
+			<trans-unit id="def_dismissbutton">
+				<source>No thanks!</source>
+			</trans-unit>
+			<trans-unit id="def_linktext">
+				<source>Learn more</source>
+			</trans-unit>
+			<trans-unit id="def_acceptbutton">
+				<source>Allow cookies</source>
+			</trans-unit>
+			<trans-unit id="def_denybutton">
+				<source>Decline</source>
+			</trans-unit>
+			<trans-unit id="def_revokebutton">
+				<source>Cookie Policy</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

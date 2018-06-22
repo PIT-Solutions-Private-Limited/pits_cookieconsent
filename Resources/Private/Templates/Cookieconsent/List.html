@@ -1,0 +1,143 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<f:flashMessages />
+<script>
+window.addEventListener("load", function(){
+
+function myFunction() {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    return expires;
+}
+
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "<f:format.raw>{bgcolor}</f:format.raw>",
+      "text": "<f:format.raw>{textcolor}</f:format.raw>"
+    },
+    "button": {
+      
+  <f:if condition="{wire}">
+  <f:then>
+      "background": "tranparent",
+      "text": "#f1d600",
+      "border": "#f1d600"
+  </f:then>
+  <f:else>
+      "background": "<f:format.raw>{bcolor}</f:format.raw>",
+      "text": "<f:format.raw>{btextcolor}</f:format.raw>"
+  </f:else>
+  </f:if>
+    }
+  },
+
+   "revokable":true,
+
+  <f:if condition="{position}">
+    <f:if condition="{static}">
+    <f:then>
+      "position": "<f:format.raw>{position}</f:format.raw>",
+      "static": "true"
+    </f:then>
+    <f:else>
+      "position": "<f:format.raw>{position}</f:format.raw>"
+    </f:else>
+    </f:if>
+  </f:if>
+
+  <f:if condition="{layout}">
+      "theme": "<f:format.raw>{layout}</f:format.raw>",
+  </f:if>
+
+  <f:if condition="{comp}">
+      "type": "<f:format.raw>{comp}</f:format.raw>",
+  </f:if>
+
+  "onStatusChange": function(status, chosenBefore) {
+    var type = this.options.type;
+    var didConsent = this.hasConsented();
+    if (type == 'opt-in' && didConsent) {
+      console.log('enable');
+    }
+    if (type == 'opt-out' && !didConsent) {
+      var expires = myFunction();
+      document.cookie = "piwik_ignore=; "+ expires +"; path=/;";
+    }
+    location.reload();
+  },
+
+  "onRevokeChoice": function() {
+    var type = this.options.type;
+    if (type == 'opt-in') {
+      console.log('disable');
+    }
+    if (type == 'opt-out') {
+      document.cookie = "piwik_ignore=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    }
+  },
+
+  <f:if condition="{content} == 1">
+      "content": {
+            "href": "<f:format.raw>{link}</f:format.raw>",
+          <f:if condition="{text.message}">
+            "message": "<f:format.raw>{text.message}</f:format.raw>",
+          </f:if>
+          <f:if condition="{text.dismissbutton}">
+            "dismiss": "<f:format.raw>{text.dismissbutton}</f:format.raw>",
+          </f:if>
+          <f:if condition="{text.linktext}">
+            "link": "<f:format.raw>{text.linktext}</f:format.raw>",
+          </f:if>
+          <f:if condition="{text.acceptbutton}">
+            "allow": "<f:format.raw>{text.acceptbutton}</f:format.raw>",
+          </f:if>
+          <f:if condition="{text.denybutton}">
+            "deny": "<f:format.raw>{text.denybutton}</f:format.raw>"
+          </f:if>
+        }
+  </f:if>
+
+  <f:if condition="{content} == 2">
+      "showLink": false,
+      "content": {
+          <f:if condition="{text.message}">
+            "message": "<f:format.raw>{text.message}</f:format.raw>",
+          </f:if>
+          <f:if condition="{text.dismissbutton}">
+            "dismiss": "<f:format.raw>{text.dismissbutton}</f:format.raw>",
+          </f:if>
+          <f:if condition="{text.linktext}">
+            "link": "<f:format.raw>{text.linktext}</f:format.raw>",
+          </f:if>
+          <f:if condition="{text.acceptbutton}">
+            "allow": "<f:format.raw>{text.acceptbutton}</f:format.raw>",
+          </f:if>
+          <f:if condition="{text.denybutton}">
+            "deny": "<f:format.raw>{text.denybutton}</f:format.raw>"
+          </f:if>
+        }
+  </f:if>
+
+  <f:if condition="{content} == 3">
+      "content": {
+          "href": "<f:format.raw>{link}</f:format.raw>"
+        }
+  </f:if>
+
+  <f:if condition="{content} == 4">
+      "showLink": false
+  </f:if>
+})});
+
+window.onload = function() {
+  $('.cc-revoke').html('<f:format.raw>{text.revokebutton}</f:format.raw>');
+};
+
+</script>
+</f:section>
+</html>

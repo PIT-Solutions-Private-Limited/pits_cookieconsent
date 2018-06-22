@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-05-07T11:46:06Z" product-name="pits_cookieconsent">
+		<header/>
+		<body>
+			<trans-unit id="tx_pits_cookieconsent_domain_model_pitscookieconsent">
+				<source>PITS Cookie Control</source>
+			</trans-unit>
+			<trans-unit id="tx_pits_cookieconsent_domain_model_pitscookiecontrol.description">
+				<source>The most popular solution to the EU cookie law.
+Rigged with TYPO3 codebase</source>
+			</trans-unit>
+			<trans-unit id="tx_pitscookieconsent_domain_model_cookiecontrol">
+				<source>Cookie Control</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.compliance">
+				<source>Compliance</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.compliance_type">
+				<source>Compliance type :</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.compliance_type_optout">
+				<source>Opt-out (You tell your users that you use cookies, and give them one button to disable cookies, and another to dismiss the message.)</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.compliance_type_optin">
+				<source>Opt-in (You tell your users that you wish to use cookies, and give them one button to enable cookies, and another to refuse them.)</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.position">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.position_desc">
+				<source>Please choose the position of widget to appear :</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.position_bannerbottom">
+				<source>Banner bottom</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.position_bannertop">
+				<source>Banner top</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.position_bannertop_push">
+				<source>Banner top (pushdown)</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.position_float_left">
+				<source>Floating left</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.position_float_right">
+				<source>Floating right</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.layout">
+				<source>Layout</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.layout_desc">
+				<source>Please choose the style of widget :</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.layout_block">
+				<source>Block</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.layout_classic">
+				<source>Classic</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.layout_edgeless">
+				<source>Edgeless</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.layout_wire">
+				<source>Wire</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.palette">
+				<source>Palette</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.palette_bannercolour">
+				<source>Color for banner (In HEX)</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.palette_buttoncolour">
+				<source>Color for button (In HEX)</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.palette_bannertextcolour">
+				<source>Color for banner text (In HEX)</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.palette_buttontextcolour">
+				<source>Color for button text (In HEX)</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.link_management">
+				<source>Link management</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.link_management_disable">
+				<source>Disable :</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.link_management_link">
+				<source>Link : (Linked to cookiesandyou.com by default)</source>
+			</trans-unit>			
+			<trans-unit id="pits_cookieconsent.text">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.text_message">
+				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.text_dismissbuttontext">
+				<source>Dismiss button text</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.text_policylinktext">
+				<source>Policy link text</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.text_acceptbuttontext">
+				<source>Accept button text</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.text_denybuttontext">
+				<source>Deny button text</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.text_message_placeholder">
+				<source>This website uses cookies to ensure you get the best experience on our website.</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.text_dismissbuttontext_placeholder">
+				<source>No thanks!</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.text_policylinktext_placeholder">
+				<source>Learn More</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.text_acceptbuttontext_placeholder">
+				<source>Allow Cookies</source>
+			</trans-unit>
+			<trans-unit id="pits_cookieconsent.text_denybuttontext_placeholder">
+				<source>Refuse Cookies</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

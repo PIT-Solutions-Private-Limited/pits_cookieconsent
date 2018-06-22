@@ -1,0 +1,355 @@
+<T3DataStructure>
+    <sheets>
+        <compliance>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.compliance</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.flexform.compliance>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.compliance_type</label>
+                            <config>
+                                <type>radio</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.compliance_type_optout</numIndex>
+                                        <numIndex index="1">opt-out</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.compliance_type_optin</numIndex>
+                                        <numIndex index="1">opt-in</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.compliance>
+                </el>
+            </ROOT>
+        </compliance>
+        <position>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.position</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.flexform.position>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.position_desc</label>
+                            <config>
+                                <type>radio</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.position_bannerbottom</numIndex>
+                                        <numIndex index="1">bbottom</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.position_bannertop</numIndex>
+                                        <numIndex index="1">btop</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.position_bannertop_push</numIndex>
+                                        <numIndex index="1">btoppush</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.position_float_left</numIndex>
+                                        <numIndex index="1">floatl</numIndex>
+                                    </numIndex>
+                                    <numIndex index="4" type="array">
+                                        <numIndex index="0">LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.position_float_right</numIndex>
+                                        <numIndex index="1">floatr</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.position>
+                </el>
+            </ROOT>
+        </position>
+        <layout>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.layout</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.flexform.layout>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.layout_desc</label>
+                            <config>
+                                <type>radio</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.layout_block</numIndex>
+                                        <numIndex index="1">block</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.layout_classic</numIndex>
+                                        <numIndex index="1">classic</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.layout_edgeless</numIndex>
+                                        <numIndex index="1">edgeless</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.layout_wire</numIndex>
+                                        <numIndex index="1">wire</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.layout>
+                </el>
+            </ROOT>
+        </layout>
+        <palette>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.palette</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.flexform.palette.banner>
+                    <TCEforms>
+                        <exclude>1</exclude>
+                        <label>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.palette_bannercolour</label>
+                        <config>
+                            <type>input</type>
+                            <size>10</size>
+                            <wizards>
+                               <_PADDING>2</_PADDING>
+                               <color>
+                                   <title>Color:</title>
+                                   <type>colorbox</type>
+                                   <dim>16×12</dim>
+                                   <tableStyle>border:solid 1px black</tableStyle>
+                                    <module type="array">
+                                        <name>wizard_colorpicker</name>
+                                        <urlParameters type="array">
+                                            <mode>wizard</mode>
+                                            <act>wizard_colorpicker.php</act>
+                                        </urlParameters>
+                                    </module>
+                                   <JSopenParams>height=300,width=250,status=0,menubar=0,scrollbars=1</JSopenParams>
+                               </color>
+                            </wizards>
+                            <placeholder># Banner</placeholder>
+                        </config>
+                        <default></default>
+                        <eval>#555555</eval>
+                    </TCEforms>
+                    </settings.flexform.palette.banner>
+                    <settings.flexform.palette.button>
+                    <TCEforms>
+                        <exclude>1</exclude>
+                        <label>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.palette_buttoncolour</label>
+                        <config>
+                            <type>input</type>
+                            <size>10</size>
+                            <wizards>
+                               <_PADDING>2</_PADDING>
+                               <color>
+                                   <title>Color:</title>
+                                   <type>colorbox</type>
+                                   <dim>16×12</dim>
+                                   <tableStyle>border:solid 1px black</tableStyle>
+                                    <module type="array">
+                                        <name>wizard_colorpicker</name>
+                                        <urlParameters type="array">
+                                            <mode>wizard</mode>
+                                            <act>wizard_colorpicker.php</act>
+                                        </urlParameters>
+                                    </module>
+                                   <JSopenParams>height=300,width=250,status=0,menubar=0,scrollbars=1</JSopenParams>
+                               </color>
+                            </wizards>
+                            <placeholder># Button</placeholder>
+                        </config>
+                        <default></default>
+                        <eval>#555555</eval>
+                    </TCEforms>
+                    </settings.flexform.palette.button>
+                    <settings.flexform.palette.bannertext>
+                    <TCEforms>
+                        <exclude>1</exclude>
+                        <label>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.palette_bannertextcolour</label>
+                        <config>
+                            <type>input</type>
+                            <size>10</size>
+                            <wizards>
+                               <_PADDING>2</_PADDING>
+                               <color>
+                                   <title>Color:</title>
+                                   <type>colorbox</type>
+                                   <dim>16×12</dim>
+                                   <tableStyle>border:solid 1px black</tableStyle>
+                                    <module type="array">
+                                        <name>wizard_colorpicker</name>
+                                        <urlParameters type="array">
+                                            <mode>wizard</mode>
+                                            <act>wizard_colorpicker.php</act>
+                                        </urlParameters>
+                                    </module>
+                                   <JSopenParams>height=300,width=250,status=0,menubar=0,scrollbars=1</JSopenParams>
+                               </color>
+                            </wizards>
+                            <placeholder># Banner text</placeholder>
+                        </config>
+                        <default></default>
+                        <eval>#555555</eval>
+                    </TCEforms>
+                    </settings.flexform.palette.bannertext>
+                    <settings.flexform.palette.buttontext>
+                    <TCEforms>
+                        <exclude>1</exclude>
+                        <label>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.palette_buttontextcolour</label>
+                        <config>
+                            <type>input</type>
+                            <size>10</size>
+                            <wizards>
+                               <_PADDING>2</_PADDING>
+                               <color>
+                                   <title>Color:</title>
+                                   <type>colorbox</type>
+                                   <dim>16×12</dim>
+                                   <tableStyle>border:solid 1px black</tableStyle>
+                                    <module type="array">
+                                        <name>wizard_colorpicker</name>
+                                        <urlParameters type="array">
+                                            <mode>wizard</mode>
+                                            <act>wizard_colorpicker.php</act>
+                                        </urlParameters>
+                                    </module>
+                                   <JSopenParams>height=300,width=250,status=0,menubar=0,scrollbars=1</JSopenParams>
+                               </color>
+                            </wizards>
+                            <placeholder># Button text</placeholder>
+                        </config>
+                        <default></default>
+                        <eval>#555555</eval>
+                    </TCEforms>
+                    </settings.flexform.palette.buttontext>
+                </el>
+            </ROOT>
+        </palette>
+        <link>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.link_management</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.flexform.link.disable>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <onChange>reload</onChange>
+                            <label>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.link_management_disable</label>
+                            <config>
+                                <type>check</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">0</numIndex>
+                                        <numIndex index="1">1</numIndex>
+                                    </numIndex>
+                                </items>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.link.disable>
+                    <settings.flexform.link.value>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <displayCond>FIELD:settings.flexform.link.disable:!=:1</displayCond>
+                            <label>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.link_management_link</label>
+                            <config>
+                                <type>input</type>
+                                <eval>trim</eval>
+                                <wizards>
+                                    <link>
+                                        <type>popup</type>
+                                        <title>Link picker for Cookie Policy</title>
+                                        <module>
+                                            <name>wizard_link</name>
+                                        </module>
+                                        <JSopenParams>height=800,width=600,status=0,menubar=0,scrollbars=1</JSopenParams>
+                                    </link>
+                                </wizards>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.link.value>
+                </el>
+            </ROOT>
+        </link>
+        <text>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.text</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.flexform.text.message>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.text_message</label>
+                            <config>
+                                <type>text</type>
+                                <cols>5</cols>
+                                <rows>5</rows>
+                                <placeholder>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.text_message_placeholder</placeholder>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.text.message>
+                    <settings.flexform.text.dismissbutton>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.text_dismissbuttontext</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                                <placeholder>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.text_dismissbuttontext_placeholder</placeholder>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.text.dismissbutton>
+                    <settings.flexform.text.linktext>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.text_policylinktext</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                                <placeholder>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.text_policylinktext_placeholder</placeholder>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.text.linktext>
+                    <settings.flexform.text.acceptbutton>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.text_acceptbuttontext</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                                <placeholder>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.text_acceptbuttontext_placeholder</placeholder>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.text.acceptbutton>
+                    <settings.flexform.text.denybutton>
+                        <TCEforms>
+                            <exclude>1</exclude>
+                            <label>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.text_denybuttontext</label>
+                            <config>
+                                <type>input</type>
+                                <size>2</size>
+                                <placeholder>LLL:EXT:pits_cookieconsent/Resources/Private/Language/locallang_db.xlf:pits_cookieconsent.text_denybuttontext_placeholder</placeholder>
+                            </config>
+                        </TCEforms>
+                    </settings.flexform.text.denybutton>
+                </el>
+            </ROOT>
+        </text>
+    </sheets>
+</T3DataStructure>
