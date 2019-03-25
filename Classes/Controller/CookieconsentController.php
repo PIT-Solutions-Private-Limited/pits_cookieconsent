@@ -21,20 +21,30 @@ use \TYPO3\CMS\Core\Utility\GeneralUtility;
 class CookieconsentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
     /**
-     * cookieconsentRepository
-     *
      * @var \PITS\PitsCookieconsent\Domain\Repository\CookieconsentRepository
-     * @inject
      */
     protected $cookieconsentRepository = null;
 
     /**
-     * PageRenderer
-     *
      * @var \TYPO3\CMS\Core\Page\PageRenderer
-     * @inject
      */
     protected $pageRenderer;
+
+    /**
+     * @param \PITS\PitsCookieconsent\Domain\Repository\CookieconsentRepository $cookieconsentRepository
+     * @return void
+     */
+    public function injectCookieconsentRepository(\PITS\PitsCookieconsent\Domain\Repository\CookieconsentRepository $cookieconsentRepository) {
+        $this->cookieconsentRepository = $cookieconsentRepository;
+    }
+
+    /**
+     * @param \TYPO3\CMS\Core\Page\PageRenderer $cookieconsentRepository
+     * @return void
+     */
+    public function injectPageRenderer(\TYPO3\CMS\Core\Page\PageRenderer $pageRenderer) {
+        $this->pageRenderer = $pageRenderer;
+    }
 
     /**
      * action list
@@ -51,7 +61,8 @@ class CookieconsentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCo
         $text           = $settings['text'];
         $comp           = $settings['compliance'];
         $cookie         = [];
-        $default_link   = $this->cookieconsentRepository->getTemplateValues($GLOBALS['TSFE']->id);
+
+        $default_link   = $this->cookieconsentRepository->getTemplateValues(GeneralUtility::_GP('id'));
 
         //colour pallette section
         $bgcolor        = ($palette['banner'] == '') ? '#000000' : $palette['banner'] ;
@@ -64,7 +75,6 @@ class CookieconsentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCo
             $this->view->assign('static', 'static');
         }
 
-        //text management section
         $message = str_replace("\n", '\n', str_replace('"', '\"', addcslashes(str_replace("\r", '', (string)LocalizationUtility::translate('def_message','pits_cookieconsent')), "\0..\37'\\")));
         $dismissbutton = str_replace("\n", '\n', str_replace('"', '\"', addcslashes(str_replace("\r", '', (string)LocalizationUtility::translate('def_dismissbutton','pits_cookieconsent')), "\0..\37'\\")));
         $linktext = str_replace("\n", '\n', str_replace('"', '\"', addcslashes(str_replace("\r", '', (string)LocalizationUtility::translate('def_linktext','pits_cookieconsent')), "\0..\37'\\")));
@@ -72,6 +82,7 @@ class CookieconsentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCo
         $denybutton = str_replace("\n", '\n', str_replace('"', '\"', addcslashes(str_replace("\r", '', (string)LocalizationUtility::translate('def_denybutton','pits_cookieconsent')), "\0..\37'\\")));
         $revokebutton = str_replace("\n", '\n', str_replace('"', '\"', addcslashes(str_replace("\r", '', (string)LocalizationUtility::translate('def_revokebutton','pits_cookieconsent')), "\0..\37'\\")));
 
+        //text management section
         $text['message']        = ($text['message'] == '') ? $message : str_replace("\n", '\n', str_replace('"', '\"', addcslashes(str_replace("\r", '', (string)$text['message']), "\0..\37'\\")));
         $text['dismissbutton']  = ($text['dismissbutton'] == '') ? $dismissbutton : str_replace("\n", '\n', str_replace('"', '\"', addcslashes(str_replace("\r", '', (string)$text['dismissbutton']), "\0..\37'\\")));
         $text['linktext']       = ($text['linktext'] == '') ? $linktext : str_replace("\n", '\n', str_replace('"', '\"', addcslashes(str_replace("\r", '', (string)$text['linktext']), "\0..\37'\\")));

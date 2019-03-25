@@ -1,7 +1,9 @@
 <?php
 namespace PITS\PitsCookieconsent\Userfunc;
 
-use \TYPO3\CMS\Core\Configuration\TypoScript\ConditionMatching\AbstractCondition;
+use TYPO3\CMS\Core\Configuration\TypoScript\ConditionMatching\AbstractCondition;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 
 /***
  *
@@ -25,12 +27,37 @@ class Cookiecheck extends AbstractCondition
      */
     public function matchCondition(array $conditionParameters)
     {
-        if(isset($_COOKIE['cookieconsent_status'])){
-            $cookieVal = $_COOKIE['cookieconsent_status'];
-            if($cookieVal === 'deny'){
-                $result = TRUE;
+
+        $result = TRUE;
+
+        if(TYPO3_MODE=='FE'){
+            $objectManager = GeneralUtility::makeInstance('TYPO3\\CMS\Extbase\\Object\\ObjectManager');
+            $configurationManager = $objectManager->get('TYPO3\\CMS\\Extbase\\Configuration\\ConfigurationManager');
+            $extbaseFrameworkConfiguration = $configurationManager->getConfiguration(ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT);
+            $compliance = $extbaseFrameworkConfiguration['page.']['1000.']['settings.']['flexform.']['compliance'];
+
+            if(isset($compliance)){
+                if ($compliance == 'opt-out' || $compliance == 'info-on'){
+                    $result = FALSE;
+                }else{
+                    $result = TRUE;
+                }
             }
+            if(isset($_COOKIE['cookieconsent_status'])){
+                $cookieVal = $_COOKIE['cookieconsent_status'];
+                if ($cookieVal === 'deny'){
+                    $result = TRUE;
+                }elseif ($cookieVal === 'allow'){
+                    $result = FALSE;
+                }elseif ($cookieVal === 'dismiss' && $compliance == 'info-on'){
+                    $result = FALSE;
+                }elseif ($cookieVal === 'dismiss' && $compliance == 'info-off'){
+                    $result = TRUE;
+                }
+            }
+
+            return $result;
         }
-        return $result;
+
     }
 }

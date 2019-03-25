@@ -2,6 +2,7 @@
 namespace PITS\PitsCookieconsent\Domain\Repository;
 
 use \TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Utility\RootlineUtility;
 
 /***
  *
@@ -47,12 +48,10 @@ class CookieconsentRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
      */
     public function getTemplateValues($pid)
     {
-        $sysPageObj      = GeneralUtility::makeInstance('TYPO3\CMS\Frontend\Page\PageRepository');
-        $rootLine        = $sysPageObj->getRootLine($pid);
+        $rootLine        = GeneralUtility::makeInstance(RootlineUtility::class,$pid);
         $TSObj           = GeneralUtility::makeInstance('TYPO3\CMS\Core\TypoScript\TemplateService');
         $TSObj->tt_track = 0;
-        $TSObj->init();
-        $TSObj->runThroughTemplates($rootLine);
+        $TSObj->runThroughTemplates($rootLine->get());
         $TSObj->generateConfig();
 
         return $TSObj->setup['plugin.']['tx_pitscookieconsent.']['defaultlink.']['value'];

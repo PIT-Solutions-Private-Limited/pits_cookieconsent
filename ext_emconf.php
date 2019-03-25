@@ -22,10 +22,10 @@ Rigged with TYPO3 codebase',
     'uploadfolder' => '0',
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '1.0.0',
+    'version' => '1.1.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '7.6.0-9.0.0',
+            'typo3' => '7.6.0-9.5',
         ],
         'conflicts' => [],
         'suggests' => [],

@@ -85,7 +85,7 @@
   white-space: nowrap;
 }
 .cc-banner .cc-btn:last-child {
-  min-width: 140px;
+  min-width: 205px;
 }
 .cc-highlight .cc-btn:first-child {
   background-color: transparent;
@@ -185,6 +185,7 @@
 }
 .cc-btn+.cc-btn {
   margin-left: .5em;
+  margin-right: .5em;
 }
 @media print {
   .cc-revoke, .cc-window {
@@ -240,7 +241,7 @@
   border-radius: 5px;
 }
 .cc-theme-classic .cc-btn:last-child {
-  min-width: 140px;
+  min-width: 205px;
 }
 .cc-floating.cc-type-info.cc-theme-classic .cc-btn {
   display: inline-block;

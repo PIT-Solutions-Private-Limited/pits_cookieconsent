@@ -5,5 +5,5 @@ plugin.tx_pitscookieconsent {
   }
 }
 page = PAGE
-page.includeJS.cookieconsent = EXT:pits_cookieconsent/Resources/Public/Javascript/cookieconsent.min.js
-page.includeCSS.cookieconsent = EXT:pits_cookieconsent/Resources/Public/Css/cookieconsent.min.css
+page.includeJSFooter.cookieconsent = EXT:pits_cookieconsent/Resources/Public/Javascript/cookieconsent-min.js
+page.includeCSS.cookieconsent = EXT:pits_cookieconsent/Resources/Public/Css/cookieconsent-min.css
