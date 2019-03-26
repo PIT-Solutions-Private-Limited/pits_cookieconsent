@@ -25,7 +25,7 @@ Rigged with TYPO3 codebase',
     'version' => '1.1.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '7.6.0-9.5',
+            'typo3' => '7.6.0-9.5.99',
         ],
         'conflicts' => [],
         'suggests' => [],
