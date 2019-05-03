@@ -27,17 +27,15 @@ class Cookiecheck extends AbstractCondition
      */
     public function matchCondition(array $conditionParameters)
     {
-	//\TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($conditionParameters);
+
         $result = TRUE;
 
         if(TYPO3_MODE=='FE'){
-           // $objectManager = GeneralUtility::makeInstance('TYPO3\\CMS\Extbase\\Object\\ObjectManager');
-           // $configurationManager = $objectManager->get('TYPO3\\CMS\\Extbase\\Configuration\\ConfigurationManager');
-          //  $extbaseFrameworkConfiguration = $configurationManager->getConfiguration(ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT);
-           // $compliance = $extbaseFrameworkConfiguration['page.']['1000.']['settings.']['flexform.']['compliance'];
-	$compliance = $conditionParameters[0];
+            $objectManager = GeneralUtility::makeInstance('TYPO3\\CMS\Extbase\\Object\\ObjectManager');
+            $configurationManager = $objectManager->get('TYPO3\\CMS\\Extbase\\Configuration\\ConfigurationManager');
+            $extbaseFrameworkConfiguration = $configurationManager->getConfiguration(ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT);
+            $compliance = $extbaseFrameworkConfiguration['page.']['1000.']['settings.']['flexform.']['compliance'];
 
-//\TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($conditionParameters);
             if(isset($compliance)){
                 if ($compliance == 'opt-out' || $compliance == 'info-on'){
                     $result = FALSE;
@@ -57,7 +55,7 @@ class Cookiecheck extends AbstractCondition
                     $result = TRUE;
                 }
             }
-	//\TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($result);exit;
+
             return $result;
         }
 
